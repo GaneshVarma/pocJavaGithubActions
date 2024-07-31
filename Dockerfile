@@ -26,7 +26,7 @@ WORKDIR /usr/src/app
 
 EXPOSE 8080
 
-COPY --from=builder /usr/src/app/target/*.jar /usr/src/app/$APP_NAME.jar
+COPY /usr/src/app/target/*.jar /usr/src/app/$APP_NAME.jar
 COPY /run.sh /run.sh
 
 RUN chmod +x /usr/src/app/$APP_NAME.jar
