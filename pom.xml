@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ggv</groupId>
-	<artifactId>java</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>pocJavaGithubActions</artifactId>
+	<version>0.0.1</version>
 	<name>java</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
