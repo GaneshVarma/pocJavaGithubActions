@@ -30,7 +30,7 @@ WORKDIR /usr/src/app
 
 EXPOSE 8080
 
-COPY /usr/src/app/target/*.jar /usr/src/app/$APP_NAME.jar
+COPY /usr/src/app/target/pocJavaGithubActions-0.0.1.jar /usr/src/app/$APP_NAME.jar
 COPY /run.sh /run.sh
 
 RUN chmod +x /usr/src/app/$APP_NAME.jar
