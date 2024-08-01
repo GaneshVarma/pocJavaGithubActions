@@ -7,7 +7,7 @@
 #COPY ${JAR_FILE} app.jar
 #ENTRYPOINT ["java","-jar","/app.jar"]
 
-FROM maven:3.6.3-openjdk-11 as builder
+FROM maven:3.6.3-openjdk-17 as builder
 
 # Create app directory
 WORKDIR /usr/src/app
