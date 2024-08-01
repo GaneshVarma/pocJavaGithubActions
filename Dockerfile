@@ -13,6 +13,7 @@ FROM maven:3.6.3-openjdk-17 as builder
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
+RUN echo ${PWD} && ls -lR
 COPY pom.xml .
 
 RUN mvn dependency:go-offline
@@ -30,6 +31,7 @@ ENV APP_NAME pocJavaGithubActions
 WORKDIR /usr/src/app
 
 EXPOSE 8080
+RUN echo ${PWD} && ls -lR
 
 COPY /usr/src/app/target/*.jar /usr/src/app/$APP_NAME.jar
 COPY /run.sh /run.sh
