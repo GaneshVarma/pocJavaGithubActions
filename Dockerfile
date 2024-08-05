@@ -33,7 +33,7 @@ COPY pom.xml /build/
 COPY src /build/src/
 
 WORKDIR /build/
-RUN mvn package
+RUN mvn clean install
 
 FROM openjdk:8-jre-alpine
 
